@@ -31,7 +31,6 @@
 .hero-title {
   font-size: 4rem;
   color: #FF0000;
-  margin-bottom: 20px;
   font-weight: 600;
   line-height: 1.2;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -166,7 +165,7 @@
   /* Remove any bottom margin */
   margin-bottom: 0;
   display: block;
-  padding: 0;
+  padding:0;
   margin: 0;
 }
 

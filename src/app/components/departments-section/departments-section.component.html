@@ -9,7 +9,7 @@
     <div class="departments-grid">
       <div *ngFor="let dept of visibleDepartments" class="department-card">
         <div class="dept-image">
-          <img src="../assets/images/doctor.jpg" [alt]="dept.name">
+          <img [src]="dept.imageUrl" [alt]="dept.name">
           <div class="dept-overlay"></div>
           <h3 class="dept-name">{{ dept.name }}</h3>
         </div>
