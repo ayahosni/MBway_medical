@@ -13,7 +13,7 @@
     <div class="partners-grid">
       <div *ngFor="let partner of partners" class="partner-card">
         <div class="partner-logo">
-          <img src="../assets/images/doctor4.png" [alt]="partner.name">
+          <img [src]="partner.imageUrl" [alt]="partner.name">
         </div>
         <div class="partner-info">
           <h3 class="partner-name">{{ partner.name }}</h3>

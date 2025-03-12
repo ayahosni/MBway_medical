@@ -8,20 +8,19 @@
   <div class="testimonials-grid">
       <div class="testimonial-card" *ngFor="let testimonial of testimonials">
           <div class="profile">
-            <img src="../assets/images/doctor.jpg" >
-            <h3>{{testimonial.name}}</h3>
+            <img [src]="testimonial.image" [alt]="testimonial.name">
+            <h3>{{ testimonial.name }}</h3>
               <p>★★★★★</p>
           </div>
-          <p class="testimonial-text">{{testimonial.text}}</p>
+          <p class="testimonial-text">{{ testimonial.text }}</p>
           <div class="before-after">
             <div data-label="Before">
-                <img src="../assets/images/doctor.jpg">
+                <img [src]="testimonial.before" alt="Before Image">
             </div>
             <div data-label="After">
-              <img src="../assets/images/doctor.jpg">
+              <img [src]="testimonial.after" alt="After Image">
             </div>
         </div>
-        
       </div>
   </div>
 </section>

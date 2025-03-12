@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 export class PartnersSectionComponent {
   partners = [
     { 
-      name: 'Dr. Ahmed Ali', 
+      name: 'Dr. salma Ali', 
       specialty: 'Cardiologist',
-      imageUrl: 'assets/images/doctor1.jpg',
+      imageUrl: '../assets/images/5947323188973257217.jpg',
       facebook: 'https://facebook.com/dr.ahmedali',
       linkedin: 'https://linkedin.com/in/dr.ahmedali',
       instagram: 'https://instagram.com/dr.ahmedali'
@@ -21,7 +21,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Sarah Mohamed', 
       specialty: 'Dentist',
-      imageUrl: 'assets/images/doctor2.jpg',
+      imageUrl: '../assets/images/5947323188973257231.jpg',
       facebook: 'https://facebook.com/dr.sarahmohamed',
       linkedin: 'https://linkedin.com/in/dr.sarahmohamed',
       instagram: 'https://instagram.com/dr.sarahmohamed'
@@ -29,7 +29,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257219.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -37,7 +37,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257230.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -45,7 +45,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257221.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -53,7 +53,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257222.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -61,7 +61,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257223.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -69,7 +69,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: 'assets/images/doctor3.jpg',
+      imageUrl: '../assets/images/5947323188973257226.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
