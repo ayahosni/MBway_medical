@@ -1,0 +1,292 @@
+.book-appointment {
+  position: relative;
+  background: url('/../assets/images/bookbg.jpeg') no-repeat center center/cover;
+  padding: 30px 0; 
+  font-family: 'Bricolage Grotesque', sans-serif;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .appointment-content {
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: visible;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    max-height: none; 
+  }
+
+  .doctors-image {
+    flex: 1;
+    position: relative;
+    padding: 30px; 
+    overflow: hidden;
+    max-height: 800px; 
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info-boxes {
+      position: absolute;
+      bottom: 20px; 
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-box {
+      width: 300px;
+      height: 35px; 
+      background: white;
+      color: red;
+      font-size: 20px; 
+      border-radius: 10px;
+      margin: 10px; 
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bricolage Grotesque', sans-serif;
+
+    }
+  }
+
+  .appointment-form {
+    flex: 1;
+    padding: 30px; 
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 8px; 
+      font-size: 30px; 
+      font-family: 'Bricolage Grotesque', sans-serif;
+
+    }
+
+    .description {
+      text-align: center;
+      color: #ffffff;
+      font-size: 22px;
+      margin-bottom: 15px; 
+      font-weight: medium;
+      font-family: 'Bricolage Grotesque', sans-serif;
+
+    }
+
+    .form-group-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px; 
+      margin-bottom: 10px; 
+    }
+
+    .form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8px; 
+    }
+
+    label {
+      color: #ffffff;
+      font-size: 14px; 
+      margin-bottom: 3px; 
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%; 
+      padding: 8px; 
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px; 
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+
+    input::placeholder,
+    select::placeholder,
+    textarea::placeholder {
+      color: #9C9C9C;
+    }
+
+    textarea {
+      height: 80px; 
+      resize: none;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px; 
+      gap: 10px; 
+    }
+
+    .cancel-btn, .save-btn {
+      width: 48%;
+      padding: 10px; 
+      border: none;
+      border-radius: 5px;
+      font-size: 16px; 
+      cursor: pointer;
+    }
+
+    .cancel-btn {
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #ccc;
+      font-weight: bold;
+    
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    
+    .save-btn {
+      background-color: #fff;
+      color: red;
+      font-weight: bold;
+      
+      &:hover {
+        background-color: #c01010;
+        color: white;
+      }
+    }
+  }
+
+  .file-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    
+    input {
+      padding-left: 30px;
+    }
+    
+    .pdf-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 16px; 
+      color: red;
+    }
+  }
+
+  /* تعديلات الريسبونسف لإعادة ترتيب الأقسام */
+  @media (max-width: 768px) {
+    .appointment-content {
+      flex-direction: column;
+      
+      /* إعادة ترتيب العناصر باستخدام فلكس أوردر */
+      .appointment-form {
+        display: flex;
+        flex-direction: column;
+        order: 4; /* آخر عنصر */
+        
+        /* إظهار النص في الأعلى باستخدام عناصر متحركة */
+        h2, .description {
+          order: -2; /* وضع العنوان والوصف في الأعلى داخل الفورم */
+          margin-bottom: 20px;
+        }
+        
+        /* إخفاء العنوان والوصف من مكانهما الأصلي والاحتفاظ بنسخة متحركة فقط */
+        .form-content {
+          order: 1;
+        }
+      }
+      
+      .doctors-image {
+        max-height: none;
+        order: 2; /* ثاني عنصر بعد النص */
+        padding-top: 10px;
+        
+        /* فصل الصورة عن المستطيلات */
+        .info-boxes {
+          position: static;
+          transform: none;
+          order: 3; /* ثالث عنصر */
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+    
+    /* نمط المستطيلات بعد فصلها عن الصورة */
+    .info-boxes {
+      position: static !important;
+      transform: none !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 20px 0;
+      
+      .info-box {
+        width: 270px;
+        height: 35px !important;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+
+       
+      }
+      
+    }
+    
+    .form-group-row {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .appointment-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* العنوان والنص أولًا */
+  .appointment-form {
+    order: 1 !important;
+  }
+
+  /* الصورة بعدها */
+  .doctors-image {
+    order: 2 !important;
+  }
+
+  /* المستطيلات بعد الصورة مباشرة */
+  .info-boxes {
+    order: 3 !important;
+    position: relative !important;
+    margin-top: -20px !important; /* لتكون ملتصقة بالصورة */
+  }
+
+  /* الفورم يكون آخر عنصر */
+  .form-content {
+    order: 4 !important;
+    margin-top: 20px !important;
+  }
+}
