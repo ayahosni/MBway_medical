@@ -29,7 +29,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: '../assets/images/5947323188973257219.jpg',
+      imageUrl: '../assets/images/5947323188973257232.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'
@@ -37,7 +37,7 @@ export class PartnersSectionComponent {
     { 
       name: 'Dr. Khaled Hassan', 
       specialty: 'Neurologist',
-      imageUrl: '../assets/images/5947323188973257230.jpg',
+      imageUrl: '../assets/images/5947323188973257233.jpg',
       facebook: 'https://facebook.com/dr.khaledhassan',
       linkedin: 'https://linkedin.com/in/dr.khaledhassan',
       instagram: 'https://instagram.com/dr.khaledhassan'

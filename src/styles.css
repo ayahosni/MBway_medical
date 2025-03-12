@@ -235,3 +235,6 @@
 .dark-mode .book-appointment .save-btn:hover {
   background: #ffffff !important;
   color: #FF0000 !important;}
+  .dark-mode .partner-card:hover .partner-info {
+    background: linear-gradient(to bottom, #fff, #0D0D0D) !important;
+  }

@@ -85,6 +85,7 @@ h3 {
 
 .before-after img {
   width: 48%;
+  height: 200px;
 }
 .before-after {
   display: flex;
